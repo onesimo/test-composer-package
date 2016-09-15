@@ -1,0 +1,22 @@
+{
+	"name":"onesimo-son/course-composer",
+	"description":"Package test",
+	"require":{
+		"php": ">=5.5",
+		"silex/silex":"1.3.*@stable"
+	},
+	"type":"library",
+	"version":"1.0",
+	"license":"MIT",
+	"authors":[
+		{
+			"name":"Onesimo Batista",
+			"email":"onesimobatista@gmail.com"
+		}
+	],
+
+	"minimum-stability":"dev",
+	"autoload":{
+		"psr-4":{"Onesimo\\SON\\":"src/Onesimo/SON"}
+	}
+}
