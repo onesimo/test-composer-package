@@ -1,10 +1,14 @@
 {
 	"name":"onesimo-son/course-composer",
 	"description":"Package test",
+
 	"require":{
 		"php": ">=5.5",
 		"silex/silex":"1.3.*@stable"
 	},
+	"require-dev": {
+        "phpunit/phpunit": "5.5.*@stable"
+    },
 	"type":"library",
 	"version":"1.0",
 	"license":"MIT",
@@ -17,6 +21,14 @@
 
 	"minimum-stability":"dev",
 	"autoload":{
-		"psr-4":{"Onesimo\\SON\\":"src/Onesimo/SON"}
-	}
+		"psr-4":{"Onesimo\\SON\\":
+			[
+				"src/Onesimo/SON",
+				"tests/Onesimo/SON"
+			]
+		}
+	},
+    "config":{
+        "bin-dir":"bin/"
+    }
 }
